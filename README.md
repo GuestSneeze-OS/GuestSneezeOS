@@ -14,6 +14,7 @@
 
 ## Drivers
 ### Hardware
+#### Macbooks
 | Hardware | Supported | Third Party Drivers |
 |----------|-----------|---------------------|
 | Keyboard | Yes       | linux-t2 patches
