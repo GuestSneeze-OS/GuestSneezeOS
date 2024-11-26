@@ -23,3 +23,7 @@
 | Sound    | Yes       | linux-t2 patches
 | Bluetooth & WiFi | Yes | linux-t2 patches & broadcom-wl & apple-bcm-firmware
 
+# Team members
+- GuestSneezePlayz - Lead
+- PracticeMedicine - Creator of installer
+- ThePixelMoon - Beta Tester
