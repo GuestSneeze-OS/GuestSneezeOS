@@ -1,12 +1,11 @@
 #!/bin/bash
-
 read -p 'This script will erase all contents of /dev/sda (C:\). Type "yes" to proceed or "no" to cancel: ' response
 
 if [[ "$response" == "yes" ]]; then
     echo "Erasing /dev/sda..."
     sudo dd if=/dev/zero of=/dev/sda bs=4M status=progress
     echo "Erased /dev/sda successfully."
-
+    echo "GUESTSNEEZEOS INSTALLER | CREATING PARTITIONS"
     sudo gdisk /dev/sda <<EOF
 n
 +200M
@@ -17,13 +16,16 @@ w
 y
 EOF
 
+    echo "GUESTSNEEZEOS INSTALLER | FORMATTING PARTITIONS"
     sudo mkfs.fat -F32 /dev/sda1
     sudo mkfs.ext4 -O "^has_journal" /dev/sda2
-
+    
+    echo "GUESTSNEEZEOS INSTALLER | MOUNTING PARTITIONS"
     sudo mount /dev/sda2 /mnt
     sudo mkdir -p /mnt/boot/efi
     sudo mount /dev/sda1 /mnt/boot/efi
 
+    echo "GUESTSNEEZEOS INSTALLER | INSTALLING BASE PACKAGES"
     sudo pacstrap /mnt base linux linux-firmware
 
     sudo genfstab -U /mnt >> /mnt/etc/fstab
@@ -45,7 +47,7 @@ echo "root:root" | chpasswd
 
 pacman -S --noconfirm grub nano vim efibootmgr networkmanager network-manager-applet \
     mtools dosfstools git plasma xorg-server base-devel linux-headers bluez bluez-utils \
-    cups xdg-utils steam xdg-user-dirs
+    cups xdg-utils steam xdg-user-dirs steam discord
 
 mkinitcpio -P
 
@@ -64,6 +66,8 @@ wget https://builds.garudalinux.org/repos/chaotic-aur/x86_64/yay-12.4.2-1-x86_64
 pacman -U yay-12.4.2-1-x86_64.pkg.tar.zst
 
 echo "guestsneezeos ALL=(ALL) ALL" >> /etc/sudoers
+
+pacman --noconfirm -Sl multilib
 
 yay -S --noconfirm plasma5-themes-vapor-steamos
 EOF
