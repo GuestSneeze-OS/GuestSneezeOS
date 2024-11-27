@@ -12,18 +12,8 @@
 * GameMode (GSOS 9)
 * Gamescope (GSOS 1)
 
-## Drivers
-### Hardware
-#### Macbooks
-| Hardware | Supported | Third Party Drivers |
-|----------|-----------|---------------------|
-| Keyboard | Yes       | linux-t2 patches
-| Touchpad | Yes       | linux-t2 patches
-| NVMe     | Yes       | linux-t2 patches
-| Sound    | Yes       | linux-t2 patches
-| Bluetooth & WiFi | Yes | linux-t2 patches & broadcom-wl & apple-bcm-firmware
-
 # Team members
-- GuestSneezePlayz - Lead
-- PracticeMedicine - Creator of installer
-- ThePixelMoon - Beta Tester
+- [GuestSneezePlayz](https://github.com/GuestSneezeOSDev)
+- [PracticeMedicine](https://github.com/PracticeMedicine03)
+- [ThePixelMoon](https://github.com/ThePixelMoon)
+- [LukeShortCloud](https://github.com/LukeShortCloud)
