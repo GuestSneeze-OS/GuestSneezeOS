@@ -30,7 +30,7 @@ f2fs-tools
 fatresize
 foot-terminfo
 fsarchiver
-gnu-netcat
+#gnu-netcat # Teampoary Fix
 gpart
 gpm
 zenity
@@ -120,7 +120,6 @@ usbutils
 vim
 virtualbox-guest-utils-nox
 vpnc
-wezterm-terminfo
 wireless-regdb
 wireless_tools
 wpa_supplicant
