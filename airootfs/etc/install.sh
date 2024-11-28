@@ -19,17 +19,14 @@ elif [ "$gpu" == "nvidia" ]; then
 else
     echo $password | sudo -S pacman -S --needed --noconfirm mesa xf86-video-intel vulkan-intel
 fi
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si --noconfirm
-cd ..
-yay -S discord dxvk-bin mangohud goverlay ttf-ms-win11-auto --noconfirm
 cd /home/$username/
 wget https://raw.githubusercontent.com/GuestSneeze-OS/GuestSneezeOS/refs/heads/main/pacman.conf
 echo $password | sudo -S cp /home/$username/pacman.conf /etc/pacman.conf
 rm -rf /home/$username/pacman.conf
 # Hope - Mohamed (GuestSneezeOSDev)
-pacman -S steam
+pacman -S steam discord mangohud goverlay --noconfirm
+
+
 
 echo 'Installation Completed.' 
 exit 1

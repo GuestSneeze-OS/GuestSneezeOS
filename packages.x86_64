@@ -127,25 +127,27 @@ xfsprogs
 xl2tpd
 zsh
 
+
+# Disable for now...
 #Arch Linux GUI XFCE
-plasma
-plasma-nm
-plasma-meta
-pyqt5
-dolphin
-konsole
-xorg
-xorg-xrandr
-sddm
-xdg-user-dirs
-bash-completion
-networkmanager
-network-manager-applet
-mousepad
-gvfs
-neofetch
-pulseaudio-alsa
-noto-fonts
+#plasma
+#plasma-nm
+#plasma-meta
+#pyqt5
+#dolphin
+#konsole
+#xorg
+#xorg-xrandr
+#sddm
+#xdg-user-dirs
+#bash-completion
+#networkmanager
+#network-manager-applet
+#mousepad
+#gvfs
+#neofetch
+#pulseaudio-alsa
+#noto-fonts
 wget
 git
-firefox
+#firefox
