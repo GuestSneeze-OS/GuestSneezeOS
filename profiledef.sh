@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="archlinux"
+iso_name="guestsneezeos"
 iso_label="GSOS_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
 iso_publisher="GuestSneezeOS <https://github.com/GuestSneeze-OS>"
 iso_application="GuestSneezeOS Live/Rescue DVD"
