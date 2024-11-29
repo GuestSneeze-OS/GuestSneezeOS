@@ -16,13 +16,6 @@ GuestSneezeOS is a Arch Linux-based Linux Distro which is the Purest Re-Implemen
 ### * NVIDIA Support (hopefully...) [[2]](https://www.reddit.com/r/FindMeALinuxDistro/comments/1gzulju/comment/lz10u72/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
 
 
-# Team members
-- [GuestSneezePlayz](https://github.com/GuestSneezeOSDev)
-- [PracticeMedicine](https://github.com/PracticeMedicine03)
-- [ThePixelMoon](https://github.com/ThePixelMoon)
-- [LukeShortCloud](https://github.com/LukeShortCloud)
-
-
 ## Passwords
 | Username | Password |
 | -------- | -------- |
@@ -41,6 +34,13 @@ GuestSneezeOS is a Arch Linux-based Linux Distro which is the Purest Re-Implemen
 - [ ] YAY (or any other aur) PACKAGE MANAGER
 - [ ] Other Desktop Enviorments ([for selection in the installer](https://github.com/GuestSneeze-OS/GuestSneezeOS/blob/main/airootfs/etc/install.sh#L85)) [[1]](https://github.com/winesapOS/winesapOS/issues/1001) [[2]](https://github.com/winesapOS/winesapOS/pull/917)
 - [ ] Host packages on AUR (so it can be accessable for non-GuestSneezeOS users)
+
+# Team members
+- [GuestSneezePlayz](https://github.com/GuestSneezeOSDev)
+- [PracticeMedicine](https://github.com/PracticeMedicine03)
+- [ThePixelMoon](https://github.com/ThePixelMoon)
+- [LukeShortCloud](https://github.com/LukeShortCloud)
+- [RedSpy](https://github.com/lolimjustherefornoreason)
 
 > [!NOTE]  
 > This README is a stub.
