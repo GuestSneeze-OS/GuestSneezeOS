@@ -1,4 +1,4 @@
 #!/bin/bash
-echo 'Building ISO...'
+sudo rm -rf ../out
 sudo mkarchiso -v -w ../out -o ../out ../GuestSneezeOS
 
