@@ -5,6 +5,9 @@
 [<img src="https://github.com/user-attachments/assets/c6a69127-68c7-4086-9e7a-79c9dd4834c2" width="75"/>](https://x.com/guestsneezeplay)
 [<img src="https://github.com/user-attachments/assets/1d660c54-cecc-4f53-a57c-f4d761718bf6" width="75"/>](https://www.reddit.com/r/GuestSneezeOS/)
 
+## About
+GuestSneezeOS is a Arch Linux-based Linux Distro which is the Purest Re-Implementation of the Steam Deck's Operating System (SteamOS), made with <3 by the GuestSneezeOS Team
+
 
 
 ## Features
