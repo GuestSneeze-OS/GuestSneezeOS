@@ -26,4 +26,5 @@ X-KDE-Username=' >> install.desktop
 cd /root
 cd -
 chmod +x -R /usr/bin /etc/lib /etc/X11 /home/root/Desktop /etc/install.sh
+echo "live:live" | chpasswd
 systemctl enable sddm
