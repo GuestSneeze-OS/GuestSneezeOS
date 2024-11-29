@@ -19,6 +19,15 @@
 - [ThePixelMoon](https://github.com/ThePixelMoon)
 - [LukeShortCloud](https://github.com/LukeShortCloud)
 
+
+## Passwords
+user: root
+pass: root
+<br>
+if you are using the live session use
+<br>
+user:live
+pass:live
 > [!NOTE]  
 > This README is a stub.
 
