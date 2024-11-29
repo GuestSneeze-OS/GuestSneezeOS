@@ -21,13 +21,13 @@
 
 
 ## Passwords
-user: root
-pass: root
-<br>
-if you are using the live session use
-<br>
-user:live
-pass:live
+| Username | Password |
+| -------- | -------- |
+| root | root |
+| live | live |
+
+
+
 > [!NOTE]  
 > This README is a stub.
 
