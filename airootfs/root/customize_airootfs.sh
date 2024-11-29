@@ -1,8 +1,8 @@
 #!/bin/bash
 
 cd /root
-mkdir -p /home/root/Desktop
-cd /home/root/Desktop
+mkdir -p /home/live/Desktop
+cd /home/live/Desktop
 touch install.desktop
 echo '[Desktop Entry]
 Comment[en_US]=

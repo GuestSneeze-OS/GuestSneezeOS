@@ -22,7 +22,6 @@ case $DESKTOP in
             CONFIRMTOCONTINUE="YES"
         else
             CONFIRMTOCONTINUE="NO"
-        ;;
 esac
 
 if [ "$CONFIRMTOCONTINUE" = "YES" ]; then
