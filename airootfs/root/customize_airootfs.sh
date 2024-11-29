@@ -3,7 +3,7 @@
 cd /root
 mkdir -p /home/root/Desktop
 cd /home/root/Desktop
-file install.desktop
+touch install.desktop
 echo '[Desktop Entry]
 Comment[en_US]=
 Comment=
