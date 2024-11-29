@@ -12,20 +12,6 @@ USERNAME=$(whiptail --inputbox "Please enter your username" 8 39 Blue --title "G
 
 PASSWORD=$(whiptail --passwordbox "Please enter your password" 8 39 Blue --title "GuestSneezeOS Installer" 3>&1 1>&2 2>&3)
 
-DESKTOP=$(whiptail --title "GuestSneezeOS Installer" --menu "Select your installation type" 16 100 9\
-        "1)" "GuestSneezeOS (Full SteamOS Experience)"
-)
-
-case $DESKTOP in 
-    "1)")
-        if whiptail --title "WARNING! - GuestSneezeOS Installer" --yesno "Due to graphical issues, this installation type will need an AMD graphics card. Using other cards like Intel or NVIDIA GPUs are not highly recommended as they have graphical issues when it comes into Gamescope sessions or Wayland sessions. Are you sure you want to install this installation type?" 8 78; then
-            CONFIRMTOCONTINUE="YES"
-        else
-            CONFIRMTOCONTINUE="NO"
-esac
-
-if [ "$CONFIRMTOCONTINUE" = "YES" ]; then
-
 mkfs.vfat -F32 -n "EFISYSTEM" "${EFI}"
 mkswap "${SWAP}"
 swapon "${SWAP}"
@@ -70,17 +56,9 @@ pacman -S xorg wayland pulseaudio --noconfirm --needed
 
 systemctl enable NetworkManager bluetooth
 
-if [[ $DESKTOP == '1' ]]
-then
     pacman -S gamescope steam plasma-shell kde-apps sddm --noconfirm --needed
     systemctl enable sddm
-fi
 REALEND
 
 
 arch-chroot /mnt sh next.sh
-else
-DESKTOP=$(whiptail --title "GuestSneezeOS Installer" --menu "Select your installation type" 16 100 9\
-        "1)" "GuestSneezeOS (Full SteamOS experience)"
-)
-fi
