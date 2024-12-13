@@ -24,14 +24,14 @@ GuestSneezeOS is a Arch Linux-based Linux Distro which is the Purest Re-Implemen
 
 
 # Progress
-- [ ] Fix The Installer
+- [X] Fix The Installer
 - [X] Add a GUI to GuestSneezeOS
 - [X] Add SteamOS theme to GuestSneezeOS
 - [X] Intel GPU Support
 - [X] AMD GPU Support
 - [X] NVIDIA GPU Support (kinda...)
 - [ ] Use LINUX-ZEN kernel
-- [ ] YAY (or any other aur) PACKAGE MANAGER
+- [X] YAY (or any other aur) PACKAGE MANAGER
 - [ ] Other Desktop Enviorments ([for selection in the installer](https://github.com/GuestSneeze-OS/GuestSneezeOS/blob/main/airootfs/etc/install.sh#L85)) [[1]](https://github.com/winesapOS/winesapOS/issues/1001) [[2]](https://github.com/winesapOS/winesapOS/pull/917)
 - [ ] Host packages on AUR (so it can be accessable for non-GuestSneezeOS users)
 
