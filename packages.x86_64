@@ -130,25 +130,25 @@ zsh
 
 # Disable for now... hope exists
 #Arch Linux GUI XFCE
-plasma
-plasma-nm
-plasma-meta
-dolphin
-konsole
-xorg
-xorg-xrandr
-sddm
-xdg-user-dirs
-bash-completion
-networkmanager
-network-manager-applet
-mousepad
-gvfs
-pulseaudio-alsa
-noto-fonts
+#plasma
+#plasma-nm
+#plasma-meta
+#dolphin
+#konsole
+#xorg
+#xorg-xrandr
+#sddm
+#xdg-user-dirs
+#bash-completion
+#networkmanager
+#network-manager-applet
+#mousepad
+#gvfs
+#pulseaudio-alsa
+#noto-fonts
 wget
 git
-firefox
+#firefox
 # Some gaming stuff 
-lutris # included in winesapOS
+#lutris # included in winesapOS
 
