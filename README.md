@@ -6,22 +6,13 @@
 [<img src="https://github.com/user-attachments/assets/1d660c54-cecc-4f53-a57c-f4d761718bf6" width="75"/>](https://www.reddit.com/r/GuestSneezeOS/)
 
 ## About
-GuestSneezeOS is a Arch Linux-based Linux Distro which is the Purest Re-Implementation of the Steam Deck's Operating System (SteamOS), made with <3 by the GuestSneezeOS Team
-
+GuestSneezeOS is a Arch Linux-based Linux Distro which is the Purest Re-Implementation of the Steam Deck's Operating System (SteamOS). GuestSneezeOS is extremely lightweight only requiring 2 Gigabytes of RAM, 16 Gigabytes of Storage, and a Dual-Core CPU!
 
 
 ## Features
 * SteamOS-like
 * Most lightweight SteamOS-Like Distro [[1]](https://www.reddit.com/r/DistroHopping/comments/1gz4ea5/comment/lyvrbtk/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
 * NVIDIA Support (hopefully...) [[2]](https://www.reddit.com/r/FindMeALinuxDistro/comments/1gzulju/comment/lz10u72/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
-
-
-## Passwords
-| Username | Password |
-| -------- | -------- |
-| root | root |
-| live | live |
-
 
 # Progress
 - [X] Fix The Installer
@@ -40,6 +31,3 @@ GuestSneezeOS is a Arch Linux-based Linux Distro which is the Purest Re-Implemen
 - [PracticeMedicine](https://github.com/PracticeMedicine03)
 - [LukeShortCloud](https://github.com/LukeShortCloud)
 - [RedSpy](https://github.com/lolimjustherefornoreason)
-
-> [!NOTE]  
-> This README is a stub.
