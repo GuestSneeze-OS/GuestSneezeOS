@@ -38,7 +38,6 @@ GuestSneezeOS is a Arch Linux-based Linux Distro which is the Purest Re-Implemen
 # Team members
 - [GuestSneezePlayz](https://github.com/GuestSneezeOSDev)
 - [PracticeMedicine](https://github.com/PracticeMedicine03)
-- [ThePixelMoon](https://github.com/ThePixelMoon)
 - [LukeShortCloud](https://github.com/LukeShortCloud)
 - [RedSpy](https://github.com/lolimjustherefornoreason)
 
