@@ -34,7 +34,9 @@ pacstrap /mnt networkmanager network-manager-applet wireless_tools nano intel-uc
 genfstab -U /mnt >> /mnt/etc/fstab
 
 echo "Bootloader Installation"
-bootctl install --path /mnt/boot
+pacman -S grub
+grub-install /dev/${EFI}
+grub-mkconfig -o /boot/grub/grub.cfg
 echo "default arch.conf" >> /mnt/boot/loader/loader.conf
 cat <<EOF > /mnt/boot/loader/entries/arch.conf
 title GuestSneezeOS
