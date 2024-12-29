@@ -77,6 +77,9 @@ if [[ "${GUESTSNEEZEOS_GAMING}" == "true" ]]; then
    echo "gamescope" >> "src/packages.x86_64"
 fi
 
-# Finally, build
-rm -rf out/ work/
-src/archiso/archiso/mkarchiso -v -w work/ -o out/ src/ 
+if [[ "${GUESTSNEEZEOS_BUILD}" == "true" ]]; then
+   # Finally, build
+   rm -rf out/ work/
+   src/archiso/archiso/mkarchiso -v -w work/ -o out/ src/ 
+   echo "Build Complete"
+fi
