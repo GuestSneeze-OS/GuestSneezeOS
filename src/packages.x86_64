@@ -126,30 +126,3 @@ wvdial
 xfsprogs
 xl2tpd
 zsh
-
-
-# Disable for now... hope exists - GuestSneezeOSDev
-# TODO: find a way to make the image sizes smaller - GuestSneezeOS
-#Arch Linux GUI XFCE
-plasma
-plasma-nm
-plasma-meta
-dolphin
-konsole
-xorg
-xorg-xrandr
-sddm
-xdg-user-dirs
-bash-completion
-networkmanager
-network-manager-applet
-mousepad
-gvfs
-pulseaudio-alsa
-noto-fonts
-wget
-git
-firefox
-# Some gaming stuff 
-#lutris # included in winesapOS
-
