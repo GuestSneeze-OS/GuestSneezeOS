@@ -1,5 +1,5 @@
 #!/bin/bash
-# Yep, this script is inspired by winesapOS. Check it out! 
+# Yep, this script is inspired and uses some code from winesapOS. Check it out! 
 # https://github.com/winesapOS/winesapOS
 
 # Load default environment variables.
@@ -25,9 +25,14 @@ if [[ "${GUESTSNEEZEOS_DE}" == "plasma" ]]; then
    mv usr/ ../airootfs/
    cd ../
    rm -rf steamdeck-kde-presets-0.16-1-any.pkg.tar/
+   echo "Installing the KDE Plasma desktop environment... Completed!"
    
 elif [[ "${GUESTSNEEZEOS_DE}" == "hyprland" ]]; then
-   echo "Hyprland is coming soon!"
+   echo "Installing the Hyprland desktop enviorment..."
+   echo "hyprland-meta" >> "src/packages.x86_64"
+   echo "waybar" >> "src/packages.x86_64"
+   # TODO: Install Theme
+   echo "Installing the Hyprland desktop enviorment complete."
 fi
 
 
