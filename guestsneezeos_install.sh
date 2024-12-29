@@ -53,22 +53,21 @@ elif [[ "${GUESTSNEEZEOS_DE}" == "gnome" ]]; then
    echo "systemctl enable gdm" >> "src/airootfs/root/customize_airootfs.sh"
    touch src/airootfs/etc/gdm/custom.conf
    echo "# GDM configuration storage
+   [daemon]
+   # Uncomment the line below to force the login screen to use Xorg
+   #WaylandEnable=false
+   AutomaticLoginEnable=True
+   AutomaticLogin=root
 
-[daemon]
-# Uncomment the line below to force the login screen to use Xorg
-#WaylandEnable=false
-AutomaticLoginEnable=True
-AutomaticLogin=root
+   [security]
 
-[security]
+   [xdmcp]
 
-[xdmcp]
+   [chooser]
 
-[chooser]
-
-[debug]
-# Uncomment the line below to turn on debugging
-#Enable=true" >> src/airootfs/etc/gdm/custom.conf
+   [debug]
+   # Uncomment the line below to turn on debugging
+   #Enable=true" >> src/airootfs/etc/gdm/custom.conf
    echo "Installing the Gnome desktop enviorment complete."
 fi
 
