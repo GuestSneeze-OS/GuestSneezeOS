@@ -4,6 +4,8 @@
 [<img src="https://github.com/user-attachments/assets/6b011a7d-106e-4cb3-bdaa-7a7f15d886e6" width="75"/>](https://discord.gg/3dKX6bQw7P)
 [<img src="https://github.com/user-attachments/assets/c6a69127-68c7-4086-9e7a-79c9dd4834c2" width="75"/>](https://x.com/guestsneezeplay)
 [<img src="https://github.com/user-attachments/assets/1d660c54-cecc-4f53-a57c-f4d761718bf6" width="75"/>](https://www.reddit.com/r/GuestSneezeOS/)
+
+---
 **GuestSneezeOS** is an Arch Linux-based distribution designed to be the purest re-implementation of the Steam Deck's operating system (SteamOS). This lightweight OS offers a smooth experience with minimal system requirements, making it perfect for low-spec devices.
 
 - **Minimum Requirements:**  
