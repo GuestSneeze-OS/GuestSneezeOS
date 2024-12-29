@@ -25,16 +25,40 @@ if [[ "${GUESTSNEEZEOS_DE}" == "plasma" ]]; then
    mv usr/ ../airootfs/
    cd ../
    rm -rf steamdeck-kde-presets-0.16-1-any.pkg.tar/
+   #Install SDDM
+   echo "sddm" >> "src/packages.x86_64"
+   echo "systemctl enable sddm" >> "src/airootfs/root/customize_airootfs.sh"
    echo "Installing the KDE Plasma desktop environment... Completed!"
    
 elif [[ "${GUESTSNEEZEOS_DE}" == "hyprland" ]]; then
    echo "Installing the Hyprland desktop enviorment..."
+   #Install SDDM
+   echo "sddm" >> "src/packages.x86_64"
+   echo "systemctl enable sddm" >> "src/airootfs/root/customize_airootfs.sh"
    echo "hyprland-meta" >> "src/packages.x86_64"
    echo "waybar" >> "src/packages.x86_64"
    # TODO: Install Theme
    echo "Installing the Hyprland desktop enviorment complete."
+
+elif [[ "${GUESTSNEEZEOS_DE}" == "gnome" ]]; then
+   echo "Installing the Gnome desktop enviorment..."
+   echo "gdm
+   gnome-shell
+   gnome-session
+   gnome-console
+   mesa
+   gnome-control-center
+   gnome-settings-daemon
+   nautilus" >> "src/packages.x86_64"
+   echo "systemctl enable gdm" >> "src/airootfs/root/customize_airootfs.sh"
+   echo "Installing the Gnome desktop enviorment complete."
 fi
 
+if [[ "${GUESTSNEEZEOS_GAMING}" == "true" ]]; then
+   echo "steam" >> "src/packages.x86_64"
+   echo "lutris" >> "src/packages.x86_64"
+   echo "gamescope" >> "src/packages.x86_64"
+fi
 
 # Finally, build
 rm -rf out/ work/
