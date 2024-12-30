@@ -4,6 +4,8 @@
 
 # Load default environment variables.
 ../env/gsos_default.sh
+# Edit the OS-RELEASE-GUESTSNEEZEOS file.
+
 
 if [[ $EUID -ne 0 ]]; then
    echo "This script must be run as root. Please use sudo." 1>&2
@@ -73,13 +75,32 @@ fi
 
 if [[ "${GUESTSNEEZEOS_GAMING}" == "true" ]]; then
    echo "steam" >> "src/packages.x86_64"
+   echo "xorg-xrandr" >> "src/packages.x86_64"
    echo "lutris" >> "src/packages.x86_64"
    echo "gamescope" >> "src/packages.x86_64"
 fi
 
+if [[ "${GUESTSNEEZEOS_XORG}" == "true" ]]; then
+   echo "xorg" >> "src/packages.x86_64"
+   echo "xdg-user-dirs" >> "src/packages.x86_64"
+fi
+
+if [[ "${GUESTSNEEZEOS_WIFI}" == "true" ]]; then
+   echo "networkmanager" >> "src/packages.x86_64"
+   echo "network-manager-applet" >> "src/packages.x86_64"
+fi
+
+if [[ "${GUESTSNEEZEOS_ENABLE_PORTABLE_STORAGE}" == "true" ]]; then
+   echo "TODO"
+fi
+
 if [[ "${GUESTSNEEZEOS_BUILD}" == "true" ]]; then
    # Finally, build
-   rm -rf out/ work/
-   src/archiso/archiso/mkarchiso -v -w work/ -o out/ src/ 
+   src/archiso/archiso/mkarchiso -v -w ${GUESTSNEEZEOS_WORKDIR} -o ${GUESTSNEEZEOS_OUTDIR} src/ 
    echo "Build Complete"
+fi
+
+if [[ "${GUESTSNEEZEOS_CLEAN_BUILD}" == "true" ]]; then
+   rm -rf ${GUESTSNEEZEOS_WORKDIR}
+   echo "Cleaned the project (DELETED ${GUESTSNEEZEOS_WORKDIR})"
 fi
