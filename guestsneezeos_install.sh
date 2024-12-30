@@ -24,68 +24,6 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
-if [[ "${GUESTSNEEZEOS_DE}" == "plasma" ]]; then
-   echo "Installing the KDE Plasma desktop environment..."
-   echo "plasma-meta" >> "src/packages.x86_64"
-   echo "plasma-nm" >> "src/packages.x86_64"
-   # The KDE Plasma theme is by @LukeShortCloud, go follow him!
-   cd ../ # Move to parent directory
-   wget https://steamdeck-packages.steamos.cloud/archlinux-mirror/jupiter-rel/os/x86_64/steamdeck-kde-presets-0.16-1-any.pkg.tar.zst
-   zstd -d steamdeck-kde-presets-0.16-1-any.pkg.tar.zst
-   mv steamdeck-kde-presets-0.16-1-any.pkg.tar/ GuestSneezeOS/
-   cd GuestSneezeOS/
-   cd steamdeck-kde-presets-0.16-1-any.pkg.tar/
-   mv etc/ ../src/airootfs/
-   mv usr/ ../src/airootfs/
-   cd ../
-   rm -rf steamdeck-kde-presets-0.16-1-any.pkg.tar/
-   #Install SDDM
-   echo "sddm" >> "src/packages.x86_64"
-   echo "systemctl enable sddm" >> "src/airootfs/root/customize_airootfs.sh"
-   echo "Installing the KDE Plasma desktop environment... Completed!"
-   
-elif [[ "${GUESTSNEEZEOS_DE}" == "hyprland" ]]; then
-   echo "Installing the Hyprland desktop enviorment..."
-   #Install SDDM
-   echo "sddm" >> "src/packages.x86_64"
-   echo "systemctl enable sddm" >> "src/airootfs/root/customize_airootfs.sh"
-   echo "hyprland-meta" >> "src/packages.x86_64"
-   echo "waybar" >> "src/packages.x86_64"
-   # TODO: Install Theme
-   echo "Installing the Hyprland desktop enviorment complete."
-
-elif [[ "${GUESTSNEEZEOS_DE}" == "gnome" ]]; then
-   echo "Installing the Gnome desktop enviorment..."
-   echo "gdm
-   gnome-shell
-   gnome-session
-   gnome-console
-   mesa
-   gnome-control-center
-   gnome-settings-daemon
-   nautilus" >> "src/packages.x86_64"
-   echo "systemctl enable gdm" >> "src/airootfs/root/customize_airootfs.sh"
-   echo "Installing the Gnome desktop enviorment complete."
-fi
-
-if [[ "${GUESTSNEEZEOS_GAMING}" == "true" ]]; then
-   echo "	" >> "src/packages.x86_64"
-   echo "steam" >> "src/packages.x86_64"
-   echo "xorg-xrandr" >> "src/packages.x86_64"
-   echo "lutris" >> "src/packages.x86_64"
-   echo "gamescope" >> "src/packages.x86_64"
-fi
-
-if [[ "${GUESTSNEEZEOS_XORG}" == "true" ]]; then
-   echo "xorg" >> "src/packages.x86_64"
-   echo "xdg-user-dirs" >> "src/packages.x86_64"
-fi
-
-if [[ "${GUESTSNEEZEOS_WIFI}" == "true" ]]; then
-   echo "networkmanager" >> "src/packages.x86_64"
-   echo "network-manager-applet" >> "src/packages.x86_64"
-fi
-
 # The code here is from winesapOS!, check it out!
 # https://github.com/winesapOS/winesapOS
 if [[ "${GUESTSNEEZEOS_ENABLE_PORTABLE_STORAGE}" == "true" ]]; then
@@ -401,7 +339,67 @@ fi
 
 if [[ "${GUESTSNEEZEOS_BUILD_ARCHISO}" == "true" ]]; then
    echo "Archiso build will be deprecated in the near future"
-   # Finally, build
+   if [[ "${GUESTSNEEZEOS_DE}" == "plasma" ]]; then
+   echo "Installing the KDE Plasma desktop environment..."
+   echo "plasma-meta" >> "src/packages.x86_64"
+   echo "plasma-nm" >> "src/packages.x86_64"
+   # The KDE Plasma theme is by @LukeShortCloud, go follow him!
+   cd ../ # Move to parent directory
+   wget https://steamdeck-packages.steamos.cloud/archlinux-mirror/jupiter-rel/os/x86_64/steamdeck-kde-presets-0.16-1-any.pkg.tar.zst
+   zstd -d steamdeck-kde-presets-0.16-1-any.pkg.tar.zst
+   mv steamdeck-kde-presets-0.16-1-any.pkg.tar/ GuestSneezeOS/
+   cd GuestSneezeOS/
+   cd steamdeck-kde-presets-0.16-1-any.pkg.tar/
+   mv etc/ ../src/airootfs/
+   mv usr/ ../src/airootfs/
+   cd ../
+   rm -rf steamdeck-kde-presets-0.16-1-any.pkg.tar/
+   #Install SDDM
+   echo "sddm" >> "src/packages.x86_64"
+   echo "systemctl enable sddm" >> "src/airootfs/root/customize_airootfs.sh"
+   echo "Installing the KDE Plasma desktop environment... Completed!"
+   
+   elif [[ "${GUESTSNEEZEOS_DE}" == "hyprland" ]]; then
+      echo "Installing the Hyprland desktop enviorment..."
+      #Install SDDM
+      echo "sddm" >> "src/packages.x86_64"
+      echo "systemctl enable sddm" >> "src/airootfs/root/customize_airootfs.sh"
+      echo "hyprland-meta" >> "src/packages.x86_64"
+      echo "waybar" >> "src/packages.x86_64"
+      # TODO: Install Theme
+      echo "Installing the Hyprland desktop enviorment complete."
+
+   elif [[ "${GUESTSNEEZEOS_DE}" == "gnome" ]]; then
+      echo "Installing the Gnome desktop enviorment..."
+      echo "gdm
+   gnome-shell
+   gnome-session
+   gnome-console
+   mesa
+   gnome-control-center
+   gnome-settings-daemon
+   nautilus" >> "src/packages.x86_64"
+   echo "systemctl enable gdm" >> "src/airootfs/root/customize_airootfs.sh"
+      echo "Installing the Gnome desktop enviorment complete."
+   fi
+
+   if [[ "${GUESTSNEEZEOS_GAMING}" == "true" ]]; then
+      echo "	" >> "src/packages.x86_64"
+      echo "steam" >> "src/packages.x86_64"
+      echo "xorg-xrandr" >> "src/packages.x86_64"
+      echo "lutris" >> "src/packages.x86_64"
+      echo "gamescope" >> "src/packages.x86_64"
+   fi
+
+   if [[ "${GUESTSNEEZEOS_XORG}" == "true" ]]; then
+      echo "xorg" >> "src/packages.x86_64"
+      echo "xdg-user-dirs" >> "src/packages.x86_64"
+   fi
+
+   if [[ "${GUESTSNEEZEOS_WIFI}" == "true" ]]; then
+      echo "networkmanager" >> "src/packages.x86_64"
+      echo "network-manager-applet" >> "src/packages.x86_64"
+   fi
    src/archiso/archiso/mkarchiso -v -w ${GUESTSNEEZEOS_WORKDIR} -o ${GUESTSNEEZEOS_OUTDIR} src/ 
    echo "Build Complete"
    rm -rf ${GUESTSNEEZEOS_WORKDIR}
