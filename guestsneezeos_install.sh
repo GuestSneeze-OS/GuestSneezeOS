@@ -3,7 +3,7 @@
 # https://github.com/winesapOS/winesapOS
 
 # Load default environment variables.
-../env/gsos_default.sh
+./env/gsos_default.sh
 # Edit the OS-RELEASE-GUESTSNEEZEOS file.
 
 
