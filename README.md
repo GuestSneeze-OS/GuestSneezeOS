@@ -6,6 +6,7 @@
 [<img src="https://github.com/user-attachments/assets/1d660c54-cecc-4f53-a57c-f4d761718bf6" width="75"/>](https://www.reddit.com/r/GuestSneezeOS/)
 
 ---
+
 *The first winesapOS-based distro - GuestSneezeOSDev*
 
 **GuestSneezeOS** is an Arch Linux-based distribution designed to be the purest re-implementation of the Steam Deck's operating system (SteamOS). This lightweight OS offers a smooth experience with minimal system requirements, making it perfect for low-spec devices.
