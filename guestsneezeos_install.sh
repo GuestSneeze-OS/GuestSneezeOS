@@ -337,8 +337,8 @@ if [[ "${GUESTSNEEZEOS_BUILD_ARCHISO}" == "true" ]]; then
    echo "Archiso build will be deprecated in the near future"
    if [[ "${GUESTSNEEZEOS_DE}" == "plasma" ]]; then
    echo "Installing the KDE Plasma desktop environment..."
-   echo "plasma-meta" >> "src/packages.x86_64"
-   echo "plasma-nm" >> "src/packages.x86_64"
+   echo "plasma-meta" >> "src_archiso/packages.x86_64"
+   echo "plasma-nm" >> "src_archiso/packages.x86_64"
    # The KDE Plasma theme is by @LukeShortCloud, go follow him!
    cd ../ # Move to parent directory
    wget https://steamdeck-packages.steamos.cloud/archlinux-mirror/jupiter-rel/os/x86_64/steamdeck-kde-presets-0.16-1-any.pkg.tar.zst
@@ -346,22 +346,22 @@ if [[ "${GUESTSNEEZEOS_BUILD_ARCHISO}" == "true" ]]; then
    mv steamdeck-kde-presets-0.16-1-any.pkg.tar/ GuestSneezeOS/
    cd GuestSneezeOS/
    cd steamdeck-kde-presets-0.16-1-any.pkg.tar/
-   mv etc/ ../src/airootfs/
-   mv usr/ ../src/airootfs/
+   mv etc/ ../src_archiso/airootfs/
+   mv usr/ ../src_archiso/airootfs/
    cd ../
    rm -rf steamdeck-kde-presets-0.16-1-any.pkg.tar/
    #Install SDDM
-   echo "sddm" >> "src/packages.x86_64"
-   echo "systemctl enable sddm" >> "src/airootfs/root/customize_airootfs.sh"
+   echo "sddm" >> "src_archiso/packages.x86_64"
+   echo "systemctl enable sddm" >> "src_archiso/airootfs/root/customize_airootfs.sh"
    echo "Installing the KDE Plasma desktop environment... Completed!"
    
    elif [[ "${GUESTSNEEZEOS_DE}" == "hyprland" ]]; then
       echo "Installing the Hyprland desktop enviorment..."
       #Install SDDM
-      echo "sddm" >> "src/packages.x86_64"
-      echo "systemctl enable sddm" >> "src/airootfs/root/customize_airootfs.sh"
-      echo "hyprland-meta" >> "src/packages.x86_64"
-      echo "waybar" >> "src/packages.x86_64"
+      echo "sddm" >> "src_archiso/packages.x86_64"
+      echo "systemctl enable sddm" >> "src_archiso/airootfs/root/customize_airootfs.sh"
+      echo "hyprland-meta" >> "src_archiso/packages.x86_64"
+      echo "waybar" >> "src_archiso/packages.x86_64"
       # TODO: Install Theme
       echo "Installing the Hyprland desktop enviorment complete."
 
@@ -374,29 +374,29 @@ if [[ "${GUESTSNEEZEOS_BUILD_ARCHISO}" == "true" ]]; then
    mesa
    gnome-control-center
    gnome-settings-daemon
-   nautilus" >> "src/packages.x86_64"
-   echo "systemctl enable gdm" >> "src/airootfs/root/customize_airootfs.sh"
+   nautilus" >> "src_archiso/packages.x86_64"
+   echo "systemctl enable gdm" >> "src_archiso/airootfs/root/customize_airootfs.sh"
       echo "Installing the Gnome desktop enviorment complete."
    fi
 
    if [[ "${GUESTSNEEZEOS_GAMING}" == "true" ]]; then
-      echo "	" >> "src/packages.x86_64"
-      echo "steam" >> "src/packages.x86_64"
-      echo "xorg-xrandr" >> "src/packages.x86_64"
-      echo "lutris" >> "src/packages.x86_64"
-      echo "gamescope" >> "src/packages.x86_64"
+      echo "	" >> "src_archiso/packages.x86_64"
+      echo "steam" >> "src_archiso/packages.x86_64"
+      echo "xorg-xrandr" >> "src_archiso/packages.x86_64"
+      echo "lutris" >> "src_archiso/packages.x86_64"
+      echo "gamescope" >> "src_archiso/packages.x86_64"
    fi
 
    if [[ "${GUESTSNEEZEOS_XORG}" == "true" ]]; then
-      echo "xorg" >> "src/packages.x86_64"
-      echo "xdg-user-dirs" >> "src/packages.x86_64"
+      echo "xorg" >> "src_archiso/packages.x86_64"
+      echo "xdg-user-dirs" >> "src_archiso/packages.x86_64"
    fi
 
    if [[ "${GUESTSNEEZEOS_WIFI}" == "true" ]]; then
-      echo "networkmanager" >> "src/packages.x86_64"
-      echo "network-manager-applet" >> "src/packages.x86_64"
+      echo "networkmanager" >> "src_archiso/packages.x86_64"
+      echo "network-manager-applet" >> "src_archiso/packages.x86_64"
    fi
-   src/archiso/archiso/mkarchiso -v -w ${GUESTSNEEZEOS_WORKDIR} -o ${GUESTSNEEZEOS_OUTDIR} src/ 
+   src_archiso/archiso/archiso/mkarchiso -v -w ${GUESTSNEEZEOS_WORKDIR} -o ${GUESTSNEEZEOS_OUTDIR} src_archiso/ 
    echo "Build Complete"
    rm -rf ${GUESTSNEEZEOS_WORKDIR}
    echo "Cleaned the project (DELETED ${GUESTSNEEZEOS_WORKDIR})"
