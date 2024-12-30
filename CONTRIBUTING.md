@@ -27,3 +27,4 @@ You can edit the default variables located in `guestsneezeos_install.sh`
 If you need to build GuestSneezeOS
 * Clone this repo with `git clone https://github.com/GuestSneeze-OS/GuestSneezeOS`
 * Required packages `sudo pacman -S arch-install-scripts bash dosfstools e2fsprogs erofs-utils libarchive libisoburn mtools squashfs-tools edk2-ovmf grub gnupg openssl`
+* Run the `guestsneezeos_install.sh` script!
