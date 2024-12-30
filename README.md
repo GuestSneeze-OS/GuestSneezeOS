@@ -5,14 +5,9 @@
 [<img src="https://github.com/user-attachments/assets/c6a69127-68c7-4086-9e7a-79c9dd4834c2" width="75"/>](https://x.com/guestsneezeplay)
 [<img src="https://github.com/user-attachments/assets/1d660c54-cecc-4f53-a57c-f4d761718bf6" width="75"/>](https://www.reddit.com/r/GuestSneezeOS/)
 
----
-<br>
-*The first winesapOS-based distro - GuestSneezeOSDev*
-<br>
 **GuestSneezeOS** is an Arch Linux-based distribution designed to be the purest re-implementation of the Steam Deck's operating system (SteamOS). This lightweight OS offers a smooth experience with minimal system requirements, making it perfect for low-spec devices.
 
-> ![IMPORTANT]
-> The Minumum Requirements here are for the archiso version not the winesapOS/Portable version.
+> The Minumum Requirements here are for the archiso version not the portable version.
 
 - **Minimum Requirements:**  
   - 2 GB of RAM 
