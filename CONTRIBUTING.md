@@ -21,3 +21,9 @@ You can edit the default variables located in `guestsneezeos_install.sh`
 | GUESTSNEEZEOS_CLEAN_BUILD| true, false |true| 
 | GUESTSNEEZEOS_ENABLE_PORTABLE_STORAGE| true, false| false |
 `GUESTSNEEZEOS_ENABLE_PORTABLE_STORAGE` is still in development meaning its in false.
+
+---
+# Requirements for building
+If you need to build GuestSneezeOS
+* Clone this repo with `git clone https://github.com/GuestSneeze-OS/GuestSneezeOS`
+* Required packages `sudo pacman -S arch-install-scripts bash dosfstools e2fsprogs erofs-utils libarchive libisoburn mtools squashfs-tools edk2-ovmf grub gnupg openssl`
