@@ -1,11 +1,19 @@
 #!/bin/bash
-# Yep, this script is inspired and uses some code from winesapOS. Check it out! 
+# Yep, this script is inspired by winesapOS. Check it out!
 # https://github.com/winesapOS/winesapOS
-
-# Load default environment variables.
-./env/gsos_default.sh
-# Edit the OS-RELEASE-GUESTSNEEZEOS file.
-
+export \
+  GUESTSNEEZEOSOS_DE="${GUESTSNEEZEOS_DE:-plasma}" \
+  GUESTSNEEZEOS_GAMING="${GUESTSNEEZEOS_GAMING:-true}" \
+  GUESTSNEEZEOS_BUILD="${GUESTSNEEZEOS_BUILD:-true}" \
+  GUESTSNEEZEOS_WAYLAND_ENABLE="${GUESTSNEEZEOS_WAYLAND_ENABLE:-false}" \
+  GUESTSNEEZEOS_XORG="${GUESTSNEEZEOS_XORG:-true}" \
+  GUESTSNEEZEOS_WIFI="${GUESTSNEEZEOS_WIFI:-true}" \
+  GUESTSNEEZEOS_OUTDIR="${GUESTSNEEZEOS_OUTDIR:-bin/}" \
+  GUESTSNEEZEOS_WORKDIR="${GUESTSNEEZEOS_WORKDIR:-work/}" \
+  GUESTSNEEZEOS_CLEAN_BUILD="${GUESTSNEEZEOS_CLEAN_BUILD:-true}"
+  #GUESTSNEEZEOS_ENABLE_PORTABLE_STORAGE="${GUESTSNEEZEOS_ENABLE_PORTABLE_STORAGE:-true}" \
+# Set GUESTSNEEZEOS_BUILD to false if you want to enable configs
+# GUESTSNEEZEOS_WIFI is for wifi support and to install network manager
 
 if [[ $EUID -ne 0 ]]; then
    echo "This script must be run as root. Please use sudo." 1>&2
