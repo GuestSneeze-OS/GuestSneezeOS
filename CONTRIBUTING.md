@@ -11,17 +11,12 @@ You can edit the default variables located in `guestsneezeos_install.sh`
 | KEY             | VALUE     | Default Value |
 |-----------------|-----------|---------------|
 | GUESTSNEEZEOSOS_DE| plasma, gnome, hyprland| plasma|
-| GUESTSNEEZEOS_GAMING|true, false| true |
-| GUESTSNEEZEOS_BUILD| true, false| true |
-| GUESTSNEEZEOS_WAYLAND_ENABLE| true, false| false |
+| GUESTSNEEZEOS_BUILD_ARCHISO| true, false| false |
 | GUESTSNEEZEOS_XORG| true, false| true |
 | GUESTSNEEZEOS_WIFI| true, false| true |
 | GUESTSNEEZEOS_OUTDIR| <any> | bin/ |
 | GUESTSNEEZEOS_WORKDIR| <any> | work/ |
-| GUESTSNEEZEOS_CLEAN_BUILD| true, false |true| 
-| GUESTSNEEZEOS_ENABLE_PORTABLE_STORAGE| true, false| false |
-`GUESTSNEEZEOS_ENABLE_PORTABLE_STORAGE` is still in development meaning its in false.
-
+| GUESTSNEEZEOS_ENABLE_PORTABLE_STORAGE| true, false| true |
 ---
 # Requirements for building
 If you need to build GuestSneezeOS
