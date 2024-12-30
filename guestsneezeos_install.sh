@@ -31,8 +31,8 @@ if [[ "${GUESTSNEEZEOS_DE}" == "plasma" ]]; then
    mv steamdeck-kde-presets-0.16-1-any.pkg.tar/ GuestSneezeOS/
    cd GuestSneezeOS/
    cd steamdeck-kde-presets-0.16-1-any.pkg.tar/
-   mv etc/ ../airootfs/
-   mv usr/ ../airootfs/
+   mv etc/ ../src/airootfs/
+   mv usr/ ../src/airootfs/
    cd ../
    rm -rf steamdeck-kde-presets-0.16-1-any.pkg.tar/
    #Install SDDM
