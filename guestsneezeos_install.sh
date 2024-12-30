@@ -65,6 +65,7 @@ elif [[ "${GUESTSNEEZEOS_DE}" == "gnome" ]]; then
 fi
 
 if [[ "${GUESTSNEEZEOS_GAMING}" == "true" ]]; then
+   echo "	" >> "src/packages.x86_64"
    echo "steam" >> "src/packages.x86_64"
    echo "xorg-xrandr" >> "src/packages.x86_64"
    echo "lutris" >> "src/packages.x86_64"
