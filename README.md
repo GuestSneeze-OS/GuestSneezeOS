@@ -19,6 +19,7 @@
 * SteamOS-like
 * Most lightweight SteamOS-Like Distro [[1]](https://www.reddit.com/r/DistroHopping/comments/1gz4ea5/comment/lyvrbtk/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
 * NVIDIA Support (hopefully...) [[2]](https://www.reddit.com/r/FindMeALinuxDistro/comments/1gzulju/comment/lz10u72/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+* Portability. [[3]](https://github.com/GuestSneeze-OS/GuestSneezeOS/blob/main/guestsneezeos_install.sh#L107)
 
 ---
 # Progress
