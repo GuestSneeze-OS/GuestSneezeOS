@@ -10,16 +10,14 @@ There are multiple ways to contribute to GuestSneezeOS
 You can edit the default variables located in `guestsneezeos_install.sh`
 | KEY             | VALUE     | Default Value |
 |-----------------|-----------|---------------|
-| GUESTSNEEZEOSOS_DE| plasma, gnome, hyprland| plasma|
-| GUESTSNEEZEOS_BUILD_ARCHISO| true, false| false |
-| GUESTSNEEZEOS_XORG| true, false| true |
-| GUESTSNEEZEOS_WIFI| true, false| true |
+| GUESTSNEEZEOS_ENABLE_PORTABLE_STORAGE| true, false| true|
+| GUESTSNEEZEOSOS_DE| plasma, hyprland, gnome| plasma|
+| GUESTSNEEZEOS_GAMING (deprecated for winesapOS base)| true, false| true|
+| GUESTSNEEZEOS_XORG| true, false| true|
+| GUESTSNEEZEOS_WIFI (deprecated for winesapOS base)| true, false|  true|
 | GUESTSNEEZEOS_OUTDIR| <any> | bin/ |
-| GUESTSNEEZEOS_WORKDIR| <any> | work/ |
-| GUESTSNEEZEOS_ENABLE_PORTABLE_STORAGE| true, false| true |
----
-# Requirements for building
-If you need to build GuestSneezeOS
-* Clone this repo with `git clone https://github.com/GuestSneeze-OS/GuestSneezeOS`
-* Required packages `sudo pacman -S arch-install-scripts bash dosfstools e2fsprogs erofs-utils libarchive libisoburn mtools squashfs-tools edk2-ovmf grub gnupg openssl`
-* Run the `guestsneezeos_install.sh` script!
+| GUESTSNEEZEOS_WORKDIR| <any>| work/ |
+| GUESTSNEEZEOS_DEVICE| <any> | vda |
+| GUESTSNEEZEOS_LOCALE| <any> | en_US.UTF-8 UTF-8|
+| GUESTSNEEZEOS_USERNAME| <any>| guestsneezeos|
+| GUESTSNEEZEOS_BUILD_ARCHISO (deprecated for winesapOS base)| true, false| false| 
