@@ -43,3 +43,5 @@
 - [GuestSneezePlayz](https://github.com/GuestSneezeOSDev)
 - [LukeShortCloud](https://github.com/LukeShortCloud)
 - [RedSpy](https://github.com/lolimjustherefornoreason)
+
+[![ReadMeSupportPalestine](https://raw.githubusercontent.com/Safouene1/support-palestine-banner/master/banner-support.svg)](https://techforpalestine.org/learn-more)
