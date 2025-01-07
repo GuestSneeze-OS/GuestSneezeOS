@@ -31,7 +31,7 @@
 - [X] NVIDIA GPU Support (kinda...)
 - [ ] Use LINUX-ZEN kernel
 - [x] Other Desktop Enviorments
-- [ ] Host packages on AUR (so it can be accessable for non-GuestSneezeOS users)
+- [ ] Portability Support
 ---
 
 **GuestSneezeOS** is open for contributions! If you're interested in helping out, you can get involved through the following:  
@@ -42,6 +42,3 @@
 # Team members
 - [GuestSneezePlayz](https://github.com/GuestSneezeOSDev)
 - [LukeShortCloud](https://github.com/LukeShortCloud)
-- [RedSpy](https://github.com/lolimjustherefornoreason)
-
-[![ReadMeSupportPalestine](https://raw.githubusercontent.com/Safouene1/support-palestine-banner/master/banner-support.svg)](https://techforpalestine.org/learn-more)
