@@ -1,6 +1,0 @@
-[submodule "archiso"]
-	path = src/archiso
-	url = https://github.com/archlinux/archiso
-[submodule "winesapOS"]
-	path = winesapOS
-	url = https://github.com/winesapOS/winesapOS
