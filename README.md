@@ -1,7 +1,7 @@
 # GuestSneezeOS
 ![Logo](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/32015c8f-8259-48a3-92e6-846248197867)
 <br>
-[<img src="https://github.com/user-attachments/assets/6b011a7d-106e-4cb3-bdaa-7a7f15d886e6" width="75"/>](https://discord.gg/3dKX6bQw7P)
+[<img src="https://github.com/user-attachments/assets/6b011a7d-106e-4cb3-bdaa-7a7f15d886e6" width="75"/>](https://discord.gg/jwams5NMKf)
 [<img src="https://github.com/user-attachments/assets/c6a69127-68c7-4086-9e7a-79c9dd4834c2" width="75"/>](https://x.com/guestsneezeplay)
 [<img src="https://github.com/user-attachments/assets/1d660c54-cecc-4f53-a57c-f4d761718bf6" width="75"/>](https://www.reddit.com/r/GuestSneezeOS/)
 
