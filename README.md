@@ -1,3 +1,5 @@
+# MOVED TO https://gitlab.com/jupiter-linux/jupiterlinux. DO NOT EXPECT NEW UPDATES IN THIS REPO!
+
 # GuestSneezeOS
 ![Logo](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/32015c8f-8259-48a3-92e6-846248197867)
 <br>
